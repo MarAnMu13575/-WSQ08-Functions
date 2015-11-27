@@ -1,63 +1,70 @@
 # -WSQ08-Functions
-#include iostream
-#include math.h
+#include <iostream>
+#include <cmath>
+
 using namespace std;
 
-double addition  (double a, double b){
-return a+b;
+float Sum(float a, float b){
+return (a+b);
 }
-
-
-double sustraction (double a, double b){
-return a-b;
+float Rest (float a, float b){
+return (a-b);
 }
-
-
-double product (double a, double b){
-return a*b;
+float Division(float a , float b){
+return (a/b);
 }
-
-
-double division (double a, double b){
-return a/b;
+float Mult (float a , float b){
+return (a*b);
 }
-
-
-int remainder (int a, int b){
-return a%b;
-}
-
+int Reminder (int a, int b){
+return (a%b);}
 
 int main(){
 
+float a;
 
-  double a;
-  double b;
-  cout<<"Wellcome to the new ultra super pro calculator where  "<<endl;
-  cout<<"you can do subtraction, multiplication, division, reaminder and addition.  "<<endl;;
+float b;
 
+int c;
 
-  cout<<"Please give a value"<<endl;
-  
-  cin>>a;
-  
-  cout<<"Please give a second value"<<endl;
-  
-  cin>>b;
-  
+cout <<"ingresa a"<<endl;
+cin>> a;
+cout <<"Ingresa b"<<endl;
+cin>> b;
+cout <<"Now choose an option"<<endl;
 
+cout<<"Press 1 for sum"<<endl;
 
-cout<<"The addition of the numbers equals to "<< addition(a,b)<<endl;
+cout <<"Press 2 for rest"<<endl;
 
-cout<<"The sustraction of the numbers equals to "<< sustraction(a,b)<<endl;
+cout <<"Press 3 for div"<<endl;
 
-cout<<"The product of the numbers equals to "<< product(a,b)<<endl;
+cout <<"Press 4 for mult"<<endl;
 
-cout<<"The division of the numbers equals to "<< division(a,b)<<endl;
+cout <<"Press 5 for Rem "<<endl;
 
+cin >>c;
+if (c==1){
+    cout <<Sum(a,b)<<endl;
+}
 
-cout<<"The remainder of the division equals to "<< remainder(a,b)<<endl;
+if (c==2){
+    cout <<Rest(a,b)<<endl;
+}
 
+if (c==3){
+
+    cout <<Division (a,b)<<endl;
+}
+
+if (c==4){
+    cout <<Mult (a,b)<<endl;
+}
+
+if (c==5){
+    cout <<Reminder(a,b)<<endl;
+}
 
 return 0;
 }
+
